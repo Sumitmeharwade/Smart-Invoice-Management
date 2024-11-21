@@ -5,8 +5,8 @@ import { ColumnDef } from "@tanstack/react-table";
 // Define the data shape in plain JavaScript instead of TypeScript.
 const columnsProducts = [
   {
-    accessorKey: "name",
-    header: "Name",
+    accessorKey: "productName",
+    header: "Product Name",
   },
   {
     accessorKey: "quantity",
