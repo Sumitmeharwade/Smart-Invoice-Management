@@ -108,7 +108,7 @@ export function TabsComponent() {
       
 
   return (
-    <Tabs defaultValue="invoices" className="w-[600px]">
+    <Tabs defaultValue="invoices" className="w-[600]">
       <TabsList className="grid w-full grid-cols-3">
       <TabsTrigger value="invoices">Invoices</TabsTrigger>
         <TabsTrigger value="products">Products</TabsTrigger>
