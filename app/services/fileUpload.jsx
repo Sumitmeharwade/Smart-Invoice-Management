@@ -35,8 +35,8 @@ const FileUpload = () => {
       // Extract data using Gemini API
       const result = await extractDataFromFile(file);
 
-      if (!result.success) {
-        throw new Error(result.error || "Failed to process the file.");
+      if (!result) {
+        throw new Error( "Failed to process the file.");
       }
 
       var resultData = result.data;

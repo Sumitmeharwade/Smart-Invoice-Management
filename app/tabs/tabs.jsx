@@ -18,7 +18,7 @@ export function TabsComponent() {
   const customers = useSelector((state) => state.customers);
 
   return (
-    <Tabs defaultValue="invoices" className="w-[600]]">
+    <Tabs defaultValue="invoices" className="w-4/5">
       <TabsList className="grid w-[600] grid-cols-3">
         <TabsTrigger value="invoices">Invoices</TabsTrigger>
         <TabsTrigger value="products">Products</TabsTrigger>
@@ -32,7 +32,7 @@ export function TabsComponent() {
             <CardDescription>Here is the Invoice details uploaded.</CardDescription>
           </CardHeader>
           <div className="container mx-auto ">
-            <DataTable columns={columnsInvoices} data={invoices} />
+            <DataTable columns={columnsInvoices} data={invoices} className="w-4/5" />
           </div>
         </Card>
       </TabsContent>
@@ -44,7 +44,7 @@ export function TabsComponent() {
             <CardDescription>Here is the list of products in the invoice uploaded.</CardDescription>
           </CardHeader>
           <div className="container mx-auto ">
-            <DataTable columns={columnsProducts} data={products} />
+            <DataTable columns={columnsProducts} data={products} className="w-4/5" />
           </div>
         </Card>
       </TabsContent>
